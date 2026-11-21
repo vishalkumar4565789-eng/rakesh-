@@ -1,399 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝐓𝐫𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 𝐆𝐚𝐮𝐭𝐚𝐦 𝐉𝐡𝐚 ™️ - Trading Signals</title>
-    <style>
-        body {
-            background-color: #0d1b2a;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            background-color: #1b263b;
-            border-radius: 15px;
-            padding: 30px 20px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #ffcc00;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        h1 {
-            color: #ffcc00;
-            font-size: 24px;
-            margin: 5px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .subtitle {
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-        .tagline {
-            color: #a0aec0;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-        
-        /* Signal Button Style */
-        .btn {
-            display: block;
-            background-color: #22c55e;
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px 0;
-            font-size: 16px;
-            text-transform: uppercase;
-            cursor: pointer;
-            border: none;
-            width: 100%;
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #16a34a;
-        }
-        
-        /* Signal Loading State */
-        .btn.loading {
-            background-color: #eab308 !important;
-            color: #000000;
-            animation: pulse 1s infinite alternate;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade With GAUTAM</title>
 
-        @keyframes pulse {
-            0% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-
-        .badge-box {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 12px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #e2e8f0;
-        }
-        .features-list {
-            text-align: left;
-            margin: 20px 0;
-            padding: 0 10px;
-            list-style: none;
-        }
-        .features-list li {
-            margin-bottom: 12px;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-        }
-        .features-list li::before {
-            content: "✓";
-            color: #ffffff;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        .notice {
-            color: #ffcc00;
-            font-size: 14px;
-            margin: 15px 0 5px 0;
-        }
-        .sub-text {
-            color: #a0aec0;
-            font-size: 12px;
-            margin-bottom: 5px;
-        }
-        .risk-disclaimer {
-            color: #718096;
-            font-size: 11px;
-            margin-top: 15px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #718096;
-        }
-        footer a {
-            color: #3b82f6;
-            text-decoration: underline;
-        }
-    </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+background:#08090d;
+color:white;
+font-family:Arial,sans-serif;
+}
+.ticker{
+display:flex;
+justify-content:space-around;
+padding:13px 5px;
+background:#11131a;
+color:#36db91;
+font-size:12px;
+}
+.container{
+max-width:650px;
+margin:auto;
+padding:30px 20px;
+text-align:center;
+}
+.logo{font-size:65px;margin-bottom:15px}
+h1{
+font-family:Georgia,serif;
+color:#f5c65d;
+font-size:38px;
+line-height:1.1;
+text-shadow:0 0 15px #b78a36;
+margin-bottom:18px;
+}
+.subtitle{font-size:14px;font-weight:bold}
+.description{
+color:#aaa;
+font-size:12px;
+line-height:1.7;
+margin:18px 0;
+}
+.telegram{
+display:block;
+max-width:380px;
+margin:20px auto;
+padding:16px;
+border-radius:40px;
+background:linear-gradient(90deg,#08b9ee,#0876bd);
+color:white;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 20px #008acb66;
+}
+.note{font-size:11px;color:#f5c65d}
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:30px;
+}
+.feature{
+background:#11141b;
+border:1px solid #292d35;
+padding:18px 12px;
+border-radius:12px;
+text-align:left;
+}
+.feature h3{
+color:#f5c65d;
+font-size:13px;
+margin-bottom:7px;
+}
+.feature p{font-size:11px;color:#aaa}
+.bottom{
+display:flex;
+justify-content:space-around;
+gap:10px;
+margin:30px 0;
+font-size:13px;
+font-weight:bold;
+}
+.bottom small{
+display:block;
+color:#aaa;
+font-size:9px;
+margin-top:6px;
+}
+.disclaimer{
+color:#999;
+font-size:10px;
+line-height:1.6;
+margin-top:25px;
+}
+.footer{
+margin-top:40px;
+font-size:11px;
+color:#aaa;
+}
+.footer strong{color:#f5c65d}
+@media(max-width:450px){
+h1{font-size:31px}
+.container{padding:25px 15px}
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-    <!-- Profile Image -->
-    <img src="https://i.ibb.co/whxW2PyT/vx-KQu-Tj-QOVl73qgedt-G8n1l9g-Obu-PUvu-D2n5-I1y-Gh-Wf-Akj-CD73ah-Di0-Rb-Zj5zz1d-Ff-It-USH-Yyp-D0v9-F5zm.jpg" alt="𝐓𝐫𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 𝐆𝐚𝐮𝐭𝐚𝐦 𝐉𝐡𝐚 ™️" class="profile-img">
-
-    <h1>Pankaj Bhardwaj</h1>
-    <div class="subtitle">NIFTY • BANKNIFTY • OPTIONS</div>
-    <div class="tagline">Daily Intraday Trading Signals & Analysis</div>
-
-    <!-- Single Telegram Button with Signal Effect -->
-    <button class="btn" onclick="connectSignal(this, '<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pankaj Bhardwaj - Trading Signals</title>
-    <style>
-        body {
-            background-color: #0d1b2a;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            background-color: #1b263b;
-            border-radius: 15px;
-            padding: 30px 20px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid #ffcc00;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        h1 {
-            color: #ffcc00;
-            font-size: 24px;
-            margin: 5px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .subtitle {
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-        .tagline {
-            color: #a0aec0;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-        
-        /* Signal Button Style */
-        .btn {
-            display: block;
-            background-color: #22c55e;
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px 0;
-            font-size: 16px;
-            text-transform: uppercase;
-            cursor: pointer;
-            border: none;
-            width: 100%;
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #16a34a;
-        }
-        
-        /* Signal Loading State */
-        .btn.loading {
-            background-color: #eab308 !important;
-            color: #000000;
-            animation: pulse 1s infinite alternate;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-
-        .badge-box {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 12px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #e2e8f0;
-        }
-        .features-list {
-            text-align: left;
-            margin: 20px 0;
-            padding: 0 10px;
-            list-style: none;
-        }
-        .features-list li {
-            margin-bottom: 12px;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-        }
-        .features-list li::before {
-            content: "✓";
-            color: #ffffff;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        .notice {
-            color: #ffcc00;
-            font-size: 14px;
-            margin: 15px 0 5px 0;
-        }
-        .sub-text {
-            color: #a0aec0;
-            font-size: 12px;
-            margin-bottom: 5px;
-        }
-        .risk-disclaimer {
-            color: #718096;
-            font-size: 11px;
-            margin-top: 15px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #718096;
-        }
-        footer a {
-            color: #3b82f6;
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <!-- Profile Image -->
-    <img src="https://via.placeholder.com/150" alt="Pankaj Bhardwaj" class="profile-img">
-
-    <h1>Pankaj Bhardwaj</h1>
-    <div class="subtitle">NIFTY • BANKNIFTY • OPTIONS</div>
-    <div class="tagline">Daily Intraday Trading Signals & Analysis</div>
-
-    <!-- Single Telegram Button with Signal Effect -->
-    <button class="btn" onclick="connectSignal(this, 'https://t.me/+MoK9ST2Aj_pmZDY1')">Join Now For Free Telegram</button>
-
-    <!-- Trusted Badge -->
-    <div class="badge-box">
-        <div>✓ Trusted by 5,000+ Traders</div>
-        <div style="margin-top: 5px;">✓ Daily Consistent Setups</div>
-    </div>
-
-    <!-- Features List -->
-    <ul class="features-list">
-        <li>5-7 High Probability Trades</li>
-        <li>Exact Entry, SL & Target</li>
-        <li>Beginner Friendly Guidance</li>
-        <li>Live Market Updates</li>
-    </ul>
-
-    <div class="notice">⏳ Free Access Closing Soon</div>
-    <div class="sub-text">📊 Limited Seats • Active Community</div>
-    <div class="risk-disclaimer">⚠️ Market investments are subject to risk</div>
-
-    <!-- Footer Section with 'AI ADS AGENCY' -->
-    <footer>
-        Powered by <a href="https://t.me/+mqNI-rk7y284M2Fl">AI ADS AGENCY</a>
-    </footer>
+<div class="ticker">
+<span>NIFTY 50 ▲</span>
+<span>BANKNIFTY ▲</span>
+<span>FINNIFTY ▲</span>
+<span>SENSEX ▲</span>
 </div>
 
-<script>
-    // Signal Check Function
-    function connectSignal(button, url) {
-        button.innerText = "📡 CONNECTING SIGNAL...";
-        button.classList.add('loading');
-        button.disabled = true;
+<div class="container">
 
-        setTimeout(function() {
-            button.innerText = "✅ SIGNAL CONNECTED!";
-            window.location.href = url;
-            
-            setTimeout(function() {
-                button.innerText = "Join Now For Free Telegram";
-                button.classList.remove('loading');
-                button.disabled = false;
-            }, 2000);
-            
-        }, 1500); 
-    }
-</script>
+<div class="logo">🛡️</div>
 
-</body>
-</html>')">Join Now For Free Telegram</button>
+<h1>TRADE WITH<br>GAUTAM</h1>
 
-    <!-- Trusted Badge -->
-    <div class="badge-box">
-        <div>✓ Trusted by 5,000+ Traders</div>
-        <div style="margin-top: 5px;">✓ Daily Consistent Setups</div>
-    </div>
+<p class="subtitle">
+Master The Smart Money Concepts & Pure Price Action.
+</p>
 
-    <!-- Features List -->
-    <ul class="features-list">
-        <li>5-7 High Probability Trades</li>
-        <li>Exact Entry, SL & Target</li>
-        <li>Beginner Friendly Guidance</li>
-        <li>Live Market Updates</li>
-    </ul>
+<p class="description">
+मार्केट को समझें, सही Entry, Target और Stoploss
+के साथ अपनी Trading Knowledge को बेहतर बनाएं।
+</p>
 
-    <div class="notice">⏳ Free Access Closing Soon</div>
-    <div class="sub-text">📊 Limited Seats • Active Community</div>
-    <div class="risk-disclaimer">⚠️ Market investments are subject to risk</div>
+<a class="telegram"
+href="https://t.me/+MoK9ST2Aj_pmZDY1"
+target="_blank">
+✈ JOIN VIP TELEGRAM NOW
+</a>
 
-    <!-- Footer Section with 'AI ADS AGENCY' -->
-    <footer>
-        Powered by <a href="https://t.me/+mqNI-rk7y284M2Fl">AI ADS AGENCY</a>
-    </footer>
+<p class="note">
+★ Free Entry • Please review risks before joining
+</p>
+
+<div class="features">
+
+<div class="feature">
+<h3>📊 Pre-Market Levels</h3>
+<p>Daily Market Preparation</p>
 </div>
 
-<script>
-    // Signal Check Function
-    function connectSignal(button, url) {
-        button.innerText = "📡 CONNECTING SIGNAL...";
-        button.classList.add('loading');
-        button.disabled = true;
+<div class="feature">
+<h3>🛡 Risk-Reward</h3>
+<p>Risk Management Basics</p>
+</div>
 
-        setTimeout(function() {
-            button.innerText = "✅ SIGNAL CONNECTED!";
-            window.location.href = url;
-            
-            setTimeout(function() {
-                button.innerText = "Join Now For Free Telegram";
-                button.classList.remove('loading');
-                button.disabled = false;
-            }, 2000);
-            
-        }, 1500); 
-    }
-</script>
+<div class="feature">
+<h3>⚡ Live Analysis</h3>
+<p>Nifty & BankNifty</p>
+</div>
+
+<div class="feature">
+<h3>🟡 Mindset & Risk</h3>
+<p>Disciplined Trading</p>
+</div>
+
+</div>
+
+<div class="bottom">
+<div>
+Market Learning
+<small>EDUCATIONAL FOCUS</small>
+</div>
+<div>
+Risk First
+<small>LEARN BEFORE TRADING</small>
+</div>
+<div>
+Community
+<small>PEER LEARNING</small>
+</div>
+</div>
+
+<p class="disclaimer">
+Disclaimer: This website provides educational information
+only and does not provide investment advice or guaranteed
+returns. Trading involves market risk. Please do your own
+research before making financial decisions.
+</p>
+
+<div class="footer">
+Crafted & Managed by <strong>Ai ads AGENCY</strong>
+</div>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -411,5 +207,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1642293577687301&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+</div>
 </body>
 </html>
